@@ -51,8 +51,9 @@ pipeline {
 					// 	sh "scp -o StrictHostKeyChecking=no script.sh ${connectionToServer}:/home/ec2-user"
 					// 	sh "scp -o StrictHostKeyChecking=no site-compose.yaml ${connectionToServer}:/home/ec2-user"
 					// 	sh "ssh -o StrictHostKeyChecking=no ${connectionToServer} ${cmdScript}"
-					sh "echo 'Deploy'"
-					}
+					// }
+
+					echo "echo 'Deploy'"
 				}
 			}
 		} // end Deployment on AWS
