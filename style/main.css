@@ -1,0 +1,13 @@
+.d1 {
+	width: 500px;
+	height: 500px;
+	margin: 100px auto;
+	text-align: center;
+	font-size: 40px;
+	padding: 10px;
+	box-shadow: 0.5px 0.5px 5px 0.5px #ddd;
+}
+
+.d1:hover {
+	font-size: 39.5px;
+}
