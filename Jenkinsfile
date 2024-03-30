@@ -10,7 +10,7 @@ pipeline {
 		AWS_ACCESS_KEY_ID = credentials("aws_access_key_id")
 		AWS_SECRET_ACCESS_KEY = credentials("aws_secret_access_key")
 		DOCKER_CREDENTIALS = credentials('docker')
-		TFVAR_env = "dev"
+		TF_VAR_env = "dev"
 	}
 
 	
@@ -46,7 +46,7 @@ pipeline {
 				script {
 					// sleep(time: 120, units: 'SECONDS')
 					def connectionToServer = "ec2-user@${SERVER_IP}"
-					def cmdScript = "bash ./script.sh ${IMAGE_TITLE} ${DOCKER_CREDENTIALS.username} ${DOCKER_CREDENTIALS.password}"
+					def cmdScript = "bash ./script.sh ${IMAGE_TITLE} ${DOCKER_CREDENTIALS_USR} ${DOCKER_CREDENTIALS_PSW}"
 					sshagent(["aws_server"]) {
 						sh "scp -o StrictHostKeyChecking=no script.sh ${connectionToServer}"
 						sh "scp -o StrictHostKeyChecking=no site-compose.yaml ${connectionToServer}"
