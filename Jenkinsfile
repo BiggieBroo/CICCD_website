@@ -50,7 +50,7 @@ pipeline {
 					sshagent(["aws_server"]) {
 						sh "scp -o StrictHostKeyChecking=no script.sh ${connectionToServer}"
 						sh "scp -o StrictHostKeyChecking=no site-compose.yaml ${connectionToServer}"
-						sh "ssh -o "
+						sh "ssh -o StrictHostKeyChecking=no ${connectionToServer} ${cmdScript}"
 					}
 				}
 			}
