@@ -66,7 +66,7 @@ data "aws_ami" "dev_ami" {
 	owners = ["amazon"]
 	filter {
 		name = "name"
-		values = ["Amazon Linux 2023 AMI"]
+		values = ["al2023-ami-2023.4.20240319.1-kernel-6.1-x86_64"]
 	}
 }
 
