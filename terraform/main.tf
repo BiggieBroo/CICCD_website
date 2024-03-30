@@ -47,12 +47,14 @@ resource "aws_default_security_group" "dev_sg" {
 		protocol = "TCP"
 		cidr_blocks = var.ip_acl
 	}
+	/*
 	ingress {
 		from_port = 8080
 		to_port = 8080
 		protocol = "TCP"
 		cidr_blocks = ["0.0.0.0/0"]
 	}
+	*/
 	egress {
 		from_port = 0
 		to_port = 0
