@@ -1,0 +1,8 @@
+#!/bin/bash
+version: '3'
+services:
+  simplePage:
+    image: $IMAGE_NAME
+    ports:
+      - 80:80
+    
