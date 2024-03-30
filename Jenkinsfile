@@ -46,11 +46,11 @@ pipeline {
 				script {
 					sleep(time: 120, units: 'SECONDS')
 					def connectionToServer = "ec2-user@${SERVER_IP}"
-					def cmdScript = "bash ./script.sh"
+					def cmdScript = "bash ./script.sh ${IMAGE_TITLE}"
 					sshagent(["aws_server"]) {
 						sh "scp -o StrictHostKeyChecking=no script.sh ${connectionToServer}:/home/ec2-user"
 						sh "scp -o StrictHostKeyChecking=no site-compose.yaml ${connectionToServer}:/home/ec2-user"
-						sh "ssh -o StrictHostKeyChecking=no ${connectionToServer} ${cmdScript ${IMAGE_TITLE} ${DOCKER_CREDENTIALS_USR} ${DOCKER_CREDENTIALS_PSW}} "
+						sh "ssh -o StrictHostKeyChecking=no ${connectionToServer} ${cmdScript}"
 					}
 				}
 			}
