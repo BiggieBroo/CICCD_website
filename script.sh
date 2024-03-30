@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Taking a title of the image
-export IMAGE_NAME=$1
-export USERNAME=$2
-export PASSWORD=$3
+# export IMAGE_NAME=$1
+# export USERNAME=$2
+# export PASSWORD=$3
 
 # Installing necessary parts
 # sudo yum update -y && yum install docker -y
