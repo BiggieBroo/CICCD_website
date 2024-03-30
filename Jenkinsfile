@@ -6,7 +6,7 @@ pipeline {
 
 	// Environment 
 	environment {
-		IMAGE_TITLE = "biggiebroo/practice:web:1.0"
+		IMAGE_TITLE = "biggiebroo/practice:web-1.0"
 		AWS_ACCESS_KEY_ID = credentials("aws_access_key_id")
 		AWS_SECRET_ACCESS_KEY = credentials("aws_secret_access_key")
 		DOCKER_CREDENTIALS = credentials('docker')
