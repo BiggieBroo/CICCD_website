@@ -50,7 +50,7 @@ pipeline {
 					sshagent(["aws_server"]) {
 						sh "scp -o StrictHostKeyChecking=no script.sh ${connectionToServer}:/home/ec2-user"
 						sh "scp -o StrictHostKeyChecking=no site-compose.yaml ${connectionToServer}:/home/ec2-user"
-						sh "ssh -o StrictHostKeyChecking=no ${connectionToServer} export IMAGE_NAME=${IMAGE_TITLE} export USERNAME=${DOCKER_CREDENTIALS_USR} export PASSWORD=${DOCKER_CREDENTIALS_PSW} ${cmdScript}"
+						sh "ssh -o StrictHostKeyChecking=no ${connectionToServer} export IMAGE_NAME=${IMAGE_TITLE} export USERNAME=${DOCKER_CREDENTIALS_USR} export PASSWORD=${DOCKER_CREDENTIALS_PSW}"
 					}
 				}
 			}
