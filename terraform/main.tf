@@ -66,7 +66,7 @@ data "aws_ami" "dev_ami" {
 	owners = ["amazon"]
 	filter {
 		name = "name"
-		values = ["ami-0ebd2bf0042bb3e85"]
+		values = ["Amazon Linux 2023 AMI"]
 	}
 }
 
