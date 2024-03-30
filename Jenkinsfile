@@ -44,9 +44,9 @@ pipeline {
 		stage("Deployment on AWS") {
 			steps {
 				script {
-					sleep(time: 120, units: 'SECONDS')
+					// sleep(time: 120, units: 'SECONDS')
 					def connectionToServer = "ec2-user@${SERVER_IP}"
-					def cmdScript = "bash ./script.sh ${IMAGE_TITLE} ${DOCKER_CREDENTIALS.username()} ${DOCKER_CREDENTIALS.password()}"
+					def cmdScript = "bash ./script.sh ${IMAGE_TITLE} ${DOCKER_CREDENTIALS.username} ${DOCKER_CREDENTIALS.password}"
 					sshagent(["aws_server"]) {
 						sh "scp -o StrictHostKeyChecking=no script.sh ${connectionToServer}"
 						sh "scp -o StrictHostKeyChecking=no site-compose.yaml ${connectionToServer}"
