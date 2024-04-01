@@ -44,8 +44,7 @@ pipeline {
 		stage("Deployment on AWS") {
 			steps {
 				script {
-					sh "echo 'Deployment'"
-					// sleep(time: 120, units: 'SECONDS')
+					sleep(time: 150, units: 'SECONDS')
 					def connectionToServer = "ec2-user@${SERVER_IP}"
 					def cmdScript = "bash ./script.sh ${IMAGE_TITLE} ${DOCKER_CREDENTIALS_USR} ${DOCKER_CREDENTIALS_PSW}"
 					sshagent(["aws_server"]) {

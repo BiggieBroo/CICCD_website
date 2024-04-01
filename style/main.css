@@ -218,6 +218,11 @@ html {
 	margin-bottom: 5px;
 }
 
+.portfolio-block > div:first-child .block-image {
+	background: url("../images/devops_site.png") no-repeat center;
+	background-size: 100%;
+}
+
 .portfolio-block > div:nth-child(2) .block-image {
 	background: url("../images/mongo.png") no-repeat center;
 	background-size: 100%;
