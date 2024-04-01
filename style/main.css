@@ -1,0 +1,472 @@
+body {
+	width: 100%;
+	margin: 0px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	font-family: sans-serif;
+}
+
+* a {
+	text-decoration: none;
+}
+
+.top-menu,
+.header,
+.about-title,
+.about-block-b > div:first-child,
+.portfolio-title,
+.portfolio-block,
+.contact-title,
+.contact  {
+ 	text-align: center;
+}
+
+.top-menu-list > div,
+.header > div,
+.stack > div,
+.about-desc > div,
+.portfolio-block > div,
+.contact-list > div,
+.contact-list > div > a > span {
+	display: inline-block;
+}
+
+.top-menu-list > div > a,
+.header-title,
+.stack > div:hover {
+	color: #fff;
+}
+
+.top-menu-list > div > a,
+.about-title,
+.portfolio-title,
+.contact-title {
+	text-transform: uppercase;
+}
+
+.header-title,
+.about-title,
+.about-block-a > div:first-child,
+.about-block-b > div:first-child,
+.stack > div,
+.block-title,
+.portfolio-title,
+.contact-title,
+.block-techs > span {
+	font-weight: bold;
+}
+
+.top-menu-list > div:hover,
+.stack > div {
+	cursor: pointer;
+}
+
+.about-block-a > div:first-child,
+.about-block-b > div:first-child,
+.about-title,
+.portfolio-title {
+	margin-bottom: 25px;
+}
+
+.top-menu {
+	background-color: #000;	
+}
+
+.top-menu-list > div,
+.stack > div,
+.portfolio-block > div {
+	transition: 0.2s linear;
+}
+
+.top-menu {
+	position: fixed;
+	width: 100%;
+	top: 0px;
+}
+
+.top-menu {
+	padding: 0px;
+}
+
+.top-menu-list > div {
+	padding: 20px 40px;
+}
+
+.top-menu-list > div > a {
+	font-size: 15px;
+}
+
+.top-menu-list > div:hover {
+	background-color: #888;
+	border-radius: 10px;
+}
+
+
+.header {
+	margin-top: 60px;
+	padding: 50px 0px;
+	background-size: 100%;
+}
+
+.header > div,
+.contact-list span {
+	vertical-align: text-top;
+}
+
+.header-image {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	margin-right: 50px;
+	background: url("../images/personal_image.jpg") no-repeat center;
+	background-size: 100%;
+}
+
+.header-title {
+	width: 500px;
+	padding: 20px;
+	font-size: 20px;
+	margin-top: 50px;
+	background-color: #010101;
+	border-radius: 100px;
+}
+
+.about,
+.contact {
+	background-color: #f9f9f9;
+}
+
+.about,
+.portfolio,
+.contact {
+	padding: 50px 200px;
+}
+
+.about-title,
+.portfolio-title,
+.contact-title {
+	font-size: 25px;
+	color: #555;
+}
+
+.about-desc {
+	padding: 50px 0px;
+}
+
+.about-desc > div {
+	width: 49%;
+	vertical-align: text-top;
+}
+
+.about-block-a {
+	padding-right: 15px;
+}
+
+.about-block-a > div:first-child,
+.about-block-b > div:first-child {
+	font-size: 24px;
+	color: #544;
+}
+
+.about-block-a > div:last-child {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.about-block-b > div:first-child {
+	color: #43af18;
+}
+
+.stack > div {
+	border: 0.5px solid #ddd;
+	padding: 10px;
+}
+
+.stack > div:not(:last-child) {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.stack > div:hover {
+	border: 0.5px solid #fff;
+	background-color: #43af18;
+}
+
+.portfolio-block > div {
+	overflow: hidden;
+}
+
+.portfolio-block > div {
+	width: 22%;
+	padding: 10px;
+	height: 350px;
+	box-shadow: 0.5px 0.5px 2px #888;
+}
+
+.portfolio-block > div:hover {
+	box-shadow: 0px 0px 2px #999;
+}
+
+.block-image {
+	width: 100%;
+	height: 200px;
+	margin-bottom: 5px;
+}
+
+.portfolio-block > div:nth-child(2) .block-image {
+	background: url("../images/mongo.png") no-repeat center;
+	background-size: 100%;
+}
+
+.portfolio-block > div:nth-child(3) .block-image {
+	background: url("../images/custom_aws.png") no-repeat center;
+	background-size: 100%;
+}
+
+.portfolio-block > div:last-child .block-image {
+	background: url("../images/terraform_eks.png") no-repeat center;
+	background-size: 100%;
+}
+
+.portfolio-block-each,
+.contact-list > div {
+	text-align: left;
+}
+
+.portfolio-block-each > a,
+.contact-list a {
+	color: #000;
+}
+
+.block-title {
+	color: #43af18;
+}
+
+.portfolio-block-each > a > div:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+.contact-list {
+	padding: 20px 0px;
+}
+
+.contact-list > div {
+	vertical-align: text-top;
+	width: 45%;
+	margin-bottom: 20px;
+}
+
+.contact-list a {
+	font-size: 20px;
+}
+
+.contact-list > div > a > span:first-child {
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+}
+
+.contact-list > div > a > span:last-child {
+	padding: 10px 0px;
+}
+
+.contact-list > div:first-child > a > span:first-child {
+	background: url("../images/linkedin.png") no-repeat center;
+	background-size: 80%;
+}
+
+.contact-list > div:nth-child(2) > a > span:first-child {
+	background: url("../images/telegram.png") no-repeat center;
+	background-size: 80%;
+}
+
+.contact-list > div:nth-child(3) > a > span:first-child {
+	background: url("../images/gmail.png") no-repeat center;
+	background-size: 80%;
+}
+
+.contact-list > div:last-child > a > span:first-child {
+	background: url("../images/github.png") no-repeat center;
+	background-size: 80%;
+}
+
+@media screen and (max-width: 450px) {
+	.top-menu-list > div {
+		padding: 5px;
+	}
+
+	.header {
+		margin-top: 30px;
+		padding: 20px 0px;
+		background-size: 100%;
+	}
+
+	.header-image {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		margin-right: 10px;
+		background: url("../images/personal_image.jpg") no-repeat center;
+		background-size: 100%;
+	}
+
+	.header-title {
+		width: 150px;
+		padding: 5px;
+		font-size: 15px;
+		margin-top: 25px;
+		border-radius: 10px;
+	}
+
+	.about,
+	.portfolio,
+	.contact {
+		padding: 10px 50px;
+	}
+
+	.about-desc > div,
+	.portfolio-block > div,
+	.contact-list > div, {
+		display: block;
+	}
+
+	.about-block-a > div:first-child,
+	.about-block-b > div:first-child {
+		margin-bottom: 5px;
+	}
+
+	.about-desc {
+		padding: 5px;
+	}
+
+	.about-desc > div,
+	.portfolio-block > div,
+	.contact-list > div {
+		width: 100%;
+	}
+
+	.about-block-a {
+		padding-right: 0px;
+	}
+
+	.about-block-a > div:first-child,
+	.about-block-b > div:first-child {
+		font-size: 20px;
+	}
+
+	.about-block-a > div:last-child {
+		font-size: 16px;
+	}
+
+	.about-block-a > div:first-child,
+	.about-block-b > div:first-child,
+	.about-title,
+	.portfolio-title {
+		margin-bottom: 10px;
+	}
+
+	.contact-list > div > a > span:first-child {
+		width: 25px;
+		height: 25px;
+		margin-right: 5px;
+	}
+
+	.contact-list > div > a > span:last-child {
+		padding: 10px 0px;
+		font-size: 14px;
+	}
+
+	.about-title,
+	.portfolio-title,
+	.contact-title {
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 451px) and (max-width: 1024px) {
+	.header-image {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		margin-right: 20px;
+		background: url("../images/personal_image.jpg") no-repeat center;
+		background-size: 100%;
+	}
+
+	.header-title {
+		width: 250px;
+		padding: 10px;
+		font-size: 15px;
+		margin-top: 40px;
+		border-radius: 10px;
+	}
+
+	.about,
+	.portfolio,
+	.contact {
+		padding: 10px 50px;
+	}
+
+	.about-desc > div,
+	.portfolio-block > div,
+	.contact-list > div, {
+		display: block;
+	}
+
+	.about-block-a > div:first-child,
+	.about-block-b > div:first-child {
+		margin-bottom: 5px;
+	}
+
+	.about-desc {
+		padding: 5px;
+	}
+
+	.about-desc > div,
+	.portfolio-block > div,
+	.contact-list > div {
+		width: 100%;
+	}
+
+	.about-block-a {
+		padding-right: 0px;
+	}
+
+	.about-block-a > div:first-child,
+	.about-block-b > div:first-child {
+		font-size: 20px;
+	}
+
+	.about-block-a > div:last-child {
+		font-size: 16px;
+	}
+
+	.about-block-a > div:first-child,
+	.about-block-b > div:first-child,
+	.about-title,
+	.portfolio-title {
+		margin-bottom: 10px;
+	}
+
+	.contact-list > div > a > span:first-child {
+		width: 25px;
+		height: 25px;
+		margin-right: 5px;
+	}
+
+	.contact-list > div > a > span:last-child {
+		padding: 10px 0px;
+		font-size: 14px;
+	}
+
+	.about-title,
+	.portfolio-title,
+	.contact-title {
+		font-size: 20px;
+	}	
+}
