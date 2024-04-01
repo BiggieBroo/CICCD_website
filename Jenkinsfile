@@ -1,4 +1,4 @@
-library identifier: 'CICD_website@jenkins-shared-library', retriever: modernSCM([$class: 'GitSCMSource', remote: 'https://github.com/BiggieBroo/CICD_website', credentialsId: 'github'])
+library identifier: 'CICD_website_DevOps@jenkins-shared-library', retriever: modernSCM([$class: 'GitSCMSource', remote: 'https://github.com/BiggieBroo/CICD_website_DevOps', credentialsId: 'github'])
 
 pipeline {
 
@@ -44,7 +44,8 @@ pipeline {
 		stage("Deployment on AWS") {
 			steps {
 				script {
-					// sleep(time: 120, units: 'SECONDS')
+					sh "echo 'Deployment'"
+					sleep(time: 120, units: 'SECONDS')
 					def connectionToServer = "ec2-user@${SERVER_IP}"
 					def cmdScript = "bash ./script.sh ${IMAGE_TITLE} ${DOCKER_CREDENTIALS_USR} ${DOCKER_CREDENTIALS_PSW}"
 					sshagent(["aws_server"]) {
